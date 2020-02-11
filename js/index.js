@@ -32,3 +32,23 @@ titles.addEventListener('copy', () =>{
 titles.addEventListener('mousemove', () =>{
     titles.style.fontWeight = '500';
 })
+
+const image1 = document.querySelector('.img-content img');
+image1.addEventListener('mouseenter', () =>{
+    image1.style.transform = 'scale(1.5)';
+    image1.style.transition = '0.8s';
+})
+image1.addEventListener('mouseleave', () =>{
+    image1.style.transform = 'scale(1)';
+    image1.style.transition = '0.8s';
+})
+
+const image2 = document.querySelector('.inverse-content img');
+image2.addEventListener('mouseenter', () =>{
+    image2.style.transform = 'scale(1.5)';
+    image2.style.transition = '0.8s';
+})
+image2.addEventListener('mouseleave', () =>{
+    image2.style.transform = 'scale(1)';
+    image2.style.transition = '0.8s';
+})
